@@ -4,30 +4,36 @@ namespace RoadTrip.Models
 {
     public class Item
     {
-        public string Description { get; set; }
-        public int Id { get; }
-        private static List<Item> _instances = new List<Item> { };
+        public string GasTank { get; set; }
+        public string RoadSideAsst { get; set; }
+        public string Music { get; set; }
+        public string Snacks { get; set; }
+        public string Map { get; set; }
+        
+    
+        public static List<Item> instances = new List<Item> {};
 
-        public Item(string description)
+        public Item(string gasTank, string roadSideAsst, string music, string snacks, string map)
         {
-            Description = description;
-            _instances.Add(this);
-            Id = _instances.Count;
+            GasTank = gasTank;
+            RoadSideAsst = roadSideAsst;
+            Music = music;
+            Snacks = snacks;
+            Map = map;
+            instances.Add(this);
+          
         }
 
-        public static List<Item> GetAll()
-        {
-            return _instances;
-        }
+        // public static List<Item> GetAll()
+        // {
+        //     return instances;
+        // }
 
-        public static void ClearAll()
-        {
-            _instances.Clear();
-        }
+        // public static void ClearAll()
+        // {
+        //     instances.Clear();
+        // }
 
-        public static Item Find(int searchId)
-        {
-            return _instances[searchId - 1];
-        }
+        
     }
 }
