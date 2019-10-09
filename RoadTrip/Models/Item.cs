@@ -23,17 +23,5 @@ namespace RoadTrip.Models
             instances.Add(this);
           
         }
-
-        // public static List<Item> GetAll()
-        // {
-        //     return instances;
-        // }
-
-        // public static void ClearAll()
-        // {
-        //     instances.Clear();
-        // }
-
-        
     }
 }
