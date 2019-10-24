@@ -6,7 +6,7 @@
 
 ## Description
 
-_Database with many-to-many relationships allows users to register and CRUD cuisines/restaurants to the database._
+_Help plan a road trip_
 
 ## Setup/Installation Requirements
 
